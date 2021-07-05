@@ -144,6 +144,21 @@ footer ul {
   padding: 10px 0 10px 20px;
 }
 
+.github-ref p a {
+  font-size: 10px;
+}
+
+.footer-logo-wrapper p {
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+  width: 140px;
+  border-radius: 15px;
+}
+.footer-logo-wrapper img {
+  max-width: 135px;
+}
+
 /* media for 859px device and lower */
 @media (max-width: 859px) {
   main,
