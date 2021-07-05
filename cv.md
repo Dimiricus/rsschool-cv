@@ -17,7 +17,7 @@
 
 **phone:** +375 (29) 212 11 30
 **mail:** getdimiricus@gmail.com
-**telegram:** Dmitriy Grin
+**telegram:** @dimiricus
 
 ## About me:
 
@@ -112,4 +112,4 @@ Another reason is the lack of any career opportunities. Below I will list some, 
 
 ## English language level:
 
-A1
+A2
