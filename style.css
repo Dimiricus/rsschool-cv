@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* styles for all element */
+h1,
+h2,
+h3,
+p,
+span,
+ol,
+a,
+li,
+figcaption {
+  font-family: Roboto;
+  color: #101d4a;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+p,
+li,
+span {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+main,
+header p,
+footer div {
+  width: 50%;
+  min-width: 820px;
+  max-width: 1120px;
+  margin: auto;
+}
+
+/* header element styles */
+header {
+  height: 30px;
+  background-color: rgb(0, 119, 128);
+  padding: 20px;
+}
+
+header p {
+  font-size: 22px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+figure {
+  margin: 20px 0;
+}
+
+section {
+  display: grid;
+  grid-column-gap: 20px;
+  padding: 0 20px;
+  background-color: #efefef;
+  border-bottom: 4px solid #ffffff;
+  border-radius: 2px;
+}
+
+section.base_information {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+section.base_information figure a img {
+  width: 370px;
+}
+
+section.base_information .contacts p,
+section.base_information .date_of_birth p {
+  font-weight: bold;
+}
+
+section.base_information .contacts p span,
+section.base_information .date_of_birth p span {
+  font-weight: normal;
+}
+
+.contacts a {
+  color: #ff7800;
+}
+.contacts ul {
+  list-style-type: none;
+}
+
+section.skills div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+section.code_wrapper ul li a,
+section.job_wrapper ul li a {
+  color: #ff7800;
+}
+
+/* footer element styles */
+footer {
+  background-color: #020a21;
+  padding: 10px 20px;
+}
+
+footer p,
+footer span a {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+}
+
+footer span a {
+  color: #ffb26e;
+}
+
+footer ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+  list-style-type: none;
+  width: 50%;
+  min-width: 820px;
+  max-width: 1120px;
+  margin: auto;
+}
+footer ul {
+  padding-left: 20px;
+  padding: 10px 0 10px 20px;
+}
+
+/* media for 859px device and lower */
+@media (max-width: 859px) {
+  main,
+  header p,
+  footer div {
+    width: 80%;
+    min-width: auto;
+    max-width: 1120px;
+  }
+
+  section.base_information {
+    justify-items: center;
+  }
+}
+
+/* media for 699px device and lower */
+@media (max-width: 699px) {
+  main,
+  header p,
+  footer div {
+    width: 98%;
+  }
+
+  header p {
+    font-size: 32px;
+  }
+
+  footer p {
+    padding: 8px 0;
+  }
+}
