@@ -66,9 +66,6 @@ Single
 
 ## Code examples:
 
-1. It is very similar to how it is done in the constructor. But no. This was done from scratch. It just looks like a constructor on the outside. HTML layout from scratch too:
-   - [Code](https://github.com/Dimiricus/quiz_demo)
-   - [Quiz](https://dimiricus.github.io/quiz_demo/)
 1. Trying to make a browser game:
    - [Code](https://github.com/Dimiricus/Aquarious_day)
    - [Game](https://dimiricus.github.io/Aquarious_day/)
