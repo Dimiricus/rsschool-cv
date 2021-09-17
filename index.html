@@ -4,22 +4,58 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=600, initial-scale=1">
         <meta name="description" content="Curriculum vitae: Dmitriy Grin">
-        <title>rsschool-cv-html</title>
-
+        <title>Dmitriy Grin - Fron-End Developer</title>
+        <link type="image/x-icon" href="sources/img/favicon.ico" rel="shortcut icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="style.css">
+
+        <script src="menu.js" defer></script>
     </head>
     <body>
         
         <header>
-            <p>Curriculum vitae</p>
+            <nav>
+                <ul>
+                    <li><span><a href="#about_me">About</a></span><span><a href="#my_photo">Photo</a></span></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li class="code-expamles"><a href="#code_examples">Projects</a></li>
+                    <li class="code-styles"><a href="#code_styles">Code</a></li>
+                    <li class="jobe-exp"><a href="#jobe_examples">Job</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li class="eng-level"><a href="#english">English</a></li>
+                    <li class="video"><a href="#video">Video</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+
+            <menu id="mobile-menu" class="hamburger-menu">
+                <input id="menu-toggle" type="checkbox">
+                <label class="menu-btn" for="menu-toggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menu-box">
+                    <li><span><a class="menu-item" href="#my_photo">Photo</a></span></li>
+                    <li><span><a class="menu-item" href="#about_me">About</a></span></li>
+                    <li><a class="menu-item" href="#skills">Skills</a></li>
+                    <li class="code-expamles"><a class="menu-item" href="#code_examples">Projects</a></li>
+                    <li class="code-styles"><a class="menu-item" href="#code_styles">Code</a></li>
+                    <li class="jobe-exp"><a class="menu-item" href="#jobe_examples">Job</a></li>
+                    <li><a class="menu-item" href="#education">Education</a></li>
+                    <li class="eng-level"><a class="menu-item" href="#english">English</a></li>
+                    <li class="video"><a class="menu-item" href="#video">Video</a></li>
+                    <li><a class="menu-item" href="#contacts">Contacts</a></li>
+                </ul>
+            </menu>
+
         </header>
 
         <main>
             <section class="base_information">
+                
                 <figure id="my_photo">
                     <a href="#my_photo">
                         <img src="https://avatars.githubusercontent.com/u/29129741?s=460&u=30e25ac9d72e32bbe487be52ef6a77883ad380ef&v=4" 
@@ -39,8 +75,9 @@
                         <h2>Contacts:</h2>
                         <ul>
                             <li><p>phone: <span><a href="tel:+375(29)2121130">+375 (29) 212 11 30</a></span></p></li>
-                            <li><p>mail: <span><a href="mailto:getdimiricus@gmail.com">getdimiricus@gmail.com</a></span></p></li>
-                            <li><p>telegram: <span><a href="https://telegram.im/@dimiricus">@dimiricus</a></span></p></li>
+                            <li><p>mail: <span><a href="mailto:getdimiricus@gmail.com" target="_block">getdimiricus@gmail.com</a></span></p></li>
+                            <li><p>telegram: <span><a href="https://telegram.im/@dimiricus" target="_block">@dimiricus</a></span></p></li>
+                            <li><p>skype: <span><a href="skype:dimiricus" target="_block">dimiricus</a></span></p></li>
                         </ul>
                         
                     </div>
@@ -105,7 +142,7 @@
             </section>
 
             <section class="code_wrapper">
-                <h2 id="code_examples"><a href="#code_examples">Code examples:</a></h2>
+                <h2 id="code_examples"><a href="#code_examples">Some projects:</a></h2>
                 <ol>
                     
                     <li>
@@ -149,7 +186,7 @@
             <section class="job_wrapper">
                 <h2 id="jobe_examples"><a href="#jobe_examples">Job experience:</a></h2>
                 <p>
-                    Worked in an it company for 2.5 years. The company was called “ByPro”. Was engaged in IT outsourcing and web development. 
+                    Worked in an IT company for 2.5 years. The company was called “ByPro”. Was engaged in IT outsourcing and web development. 
                     Developed sites mainly for CMS. I didn’t write code often. This was one of the reasons for my dismissal. 
                     Another reason is the lack of any career opportunities. Below I will list some, in my opinion, the most interesting work projects.
                 </p>
@@ -206,30 +243,40 @@
                 <h2 id="english"><a href="#english">English language level:</a></h2>
                 <p>A2</p>
             </section>
+
+            <section>
+                <h2 id="video"><a href="#video">Video presentation:</a></h2>
+                <p>Unfortunately, I have not yet recorded a video presentation, which I will do in the near future.</p>
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QHuiijlkdRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </div>
+            </section>
+
+            <section class="constacts">
+                <h2 id="contacts"><a href="#contacts">Contacts:</a></h2>
+                <ul>
+                    <li>
+                        <p>phone: <span><a href="tel:+375(29)2121130">+375 (29) 212 11 30</a></span></p>
+                    </li>
+                    <li>
+                        <p>mail: <span><a href="mailto:getdimiricus@gmail.com" target="_block">getdimiricus@gmail.com</a></span></p>
+                    </li>
+                    <li>
+                        <p>telegram: <span><a href="https://telegram.im/@dimiricus" target="_block">@dimiricus</a></span></p>
+                    </li>
+                    <li><p>skype: <span><a href="skype:dimiricus" target="_block">dimiricus</a></span></p></li>
+                </ul>
+            </section>
         </main>
 
         <footer>
-            <div>
-                <p>Contacts:</p>
-            </div>
-            
+           
             <ul>
-                <li>
-                    <p>phone: <span><a href="tel:+375(29)2121130">+375 (29) 212 11 30</a></span></p>
-                </li>
-                <li>
-                    <p>mail: <span><a href="mailto:getdimiricus@gmail.com">getdimiricus@gmail.com</a></span></p>
-                </li>
-                <li>
-                    <p>telegram: <span><a href="https://telegram.im/@dimiricus">@dimiricus</a></span></p>
-                </li>
-            </ul>
-
-            <ul>
+              
                 <li class="github-ref">
                     <p>GitHub: <span><a href="https://github.com/Dimiricus/rsschool-cv.git" target="_blank">https://github.com/Dimiricus/rsschool-cv.git</a></span></p>
                 </li>
-                <li>
+                <li class="devDate">
                     <p>Development date: <time datetime="2021-07-05">05.07.2021</time></p>
                 </li>
                 <li class="footer-logo-wrapper">
@@ -238,6 +285,6 @@
             </ul>
 
         </footer>
-
+        <a class="top" href="#">Top</a>
     </body>
 </html>
