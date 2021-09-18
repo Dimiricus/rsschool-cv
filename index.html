@@ -2,17 +2,24 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=600, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Curriculum vitae: Dmitriy Grin">
         <title>Dmitriy Grin - Fron-End Developer</title>
+
+        <!-- favicon -->
         <link type="image/x-icon" href="sources/img/favicon.ico" rel="shortcut icon">
+
+        <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="style.css">
+        <!-- hightlights styles -->
+        <link rel="stylesheet" href="sources/lib/highlight/stackoverflow-light.min.css">
 
-        <script src="menu.js" defer></script>
+        <!-- styles -->
+        <link rel="stylesheet" href="sources/css/normalize.css">
+        <link rel="stylesheet" href="sources/css/style.css">
     </head>
     <body>
         
@@ -31,7 +38,7 @@
                 </ul>
             </nav>
 
-            <menu id="mobile-menu" class="hamburger-menu">
+            <div id="mobile-menu" class="hamburger-menu">
                 <input id="menu-toggle" type="checkbox">
                 <label class="menu-btn" for="menu-toggle">
                   <span></span>
@@ -49,7 +56,7 @@
                     <li class="video"><a class="menu-item" href="#video">Video</a></li>
                     <li><a class="menu-item" href="#contacts">Contacts</a></li>
                 </ul>
-            </menu>
+            </div>
 
         </header>
 
@@ -75,9 +82,9 @@
                         <h2>Contacts:</h2>
                         <ul>
                             <li><p>phone: <span><a href="tel:+375(29)2121130">+375 (29) 212 11 30</a></span></p></li>
-                            <li><p>mail: <span><a href="mailto:getdimiricus@gmail.com" target="_block">getdimiricus@gmail.com</a></span></p></li>
-                            <li><p>telegram: <span><a href="https://telegram.im/@dimiricus" target="_block">@dimiricus</a></span></p></li>
-                            <li><p>skype: <span><a href="skype:dimiricus" target="_block">dimiricus</a></span></p></li>
+                            <li><p>mail: <span><a href="mailto:getdimiricus@gmail.com">getdimiricus@gmail.com</a></span></p></li>
+                            <li><p>telegram: <span><a href="https://telegram.im/@dimiricus">@dimiricus</a></span></p></li>
+                            <li><p>skype: <span><a href="skype:dimiricus">dimiricus</a></span></p></li>
                         </ul>
                         
                     </div>
@@ -185,6 +192,46 @@
                 </ol>
             </section>
 
+            <section class="code_examples">
+                <h2 id="code_styles"><a href="#code_examples">Code examples:</a></h2>
+                <pre>
+                    <code class="js">
+const BOXING = {
+
+  PH_CH : {
+    strange     : 25,
+    endurance   : 55,
+  },
+
+  specialBlow   : "hook",
+
+};
+
+let Person = {
+
+  PH_CH : {
+    strange     : 10,
+    endurance   : 5,
+  },    
+
+  integration : function() {
+
+    this.PH_CH.strange += 
+        this.prototype.PH_CH.strange;
+
+    this.PH_CH.endurance += 
+        this.prototype.PH_CH.endurance;
+  },
+
+};
+
+Person.prototype = BOXING;
+
+Person.integration();
+                    </code>
+                </pre>
+            </section>
+
             <section class="job_wrapper">
                 <h2 id="jobe_examples"><a href="#jobe_examples">Job experience:</a></h2>
                 <p>
@@ -250,7 +297,7 @@
                 <h2 id="video"><a href="#video">Video presentation:</a></h2>
                 <p>Unfortunately, I have not yet recorded a video presentation, which I will do in the near future.</p>
                 <div class="video-wrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QHuiijlkdRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                    <iframe src="https://www.youtube.com/embed/QHuiijlkdRw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                 </div>
             </section>
 
@@ -261,12 +308,12 @@
                         <p>phone: <span><a href="tel:+375(29)2121130">+375 (29) 212 11 30</a></span></p>
                     </li>
                     <li>
-                        <p>mail: <span><a href="mailto:getdimiricus@gmail.com" target="_block">getdimiricus@gmail.com</a></span></p>
+                        <p>mail: <span><a href="mailto:getdimiricus@gmail.com">getdimiricus@gmail.com</a></span></p>
                     </li>
                     <li>
-                        <p>telegram: <span><a href="https://telegram.im/@dimiricus" target="_block">@dimiricus</a></span></p>
+                        <p>telegram: <span><a href="https://telegram.im/@dimiricus">@dimiricus</a></span></p>
                     </li>
-                    <li><p>skype: <span><a href="skype:dimiricus" target="_block">dimiricus</a></span></p></li>
+                    <li><p>skype: <span><a href="skype:dimiricus">dimiricus</a></span></p></li>
                 </ul>
             </section>
         </main>
@@ -288,5 +335,9 @@
 
         </footer>
         <a class="top" href="#">Top</a>
+
+        <!-- Highlights library -->
+        <script src="sources/lib/highlight/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
     </body>
 </html>
