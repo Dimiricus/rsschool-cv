@@ -1,3 +1,7 @@
+:root {
+  --main-width: 951.5px;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 112px;
@@ -248,10 +252,22 @@ section.job_wrapper ul li a {
   color: #ff7800;
 }
 
+/* Code */
+.code_examples code span {
+  font-size: 14px;
+}
+pre code.hljs {
+  padding-left: 90px;
+}
+
 /* Video */
 .video-wrapper {
   margin: auto;
   padding: 20px 0 40px 0;
+}
+.video-wrapper iframe {
+  width: 520px;
+  height: 320px;
 }
 
 /* Constacts */
@@ -311,6 +327,37 @@ footer ul li:first-child {
   text-align: left;
 }
 
+/* top button */
+.top {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  left: calc(var(--main-width) / 2 + 35%);
+
+  bottom: 60px;
+  width: 50px;
+  height: 50px;
+  background: #020a21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: border-radius 0.2s ease-in-out;
+  color: white;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+.top:hover {
+  font-size: 20px;
+  border-radius: 10px;
+}
+
 /* media for 859px device and lower */
 @media (max-width: 859px) {
   html {
@@ -343,33 +390,17 @@ footer ul li:first-child {
   .menu-btn {
     top: 12px;
   }
-}
 
-/* top button */
-.top {
-  position: fixed;
-  right: 55px;
-  bottom: 60px;
-  width: 50px;
-  height: 50px;
-  background: #020a21;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Roboto";
-  text-transform: uppercase;
-  border-radius: 50%;
-  border: 2px solid white;
-  cursor: pointer;
-  transition: border-radius 0.2s ease-in-out;
-  color: white;
-  font-size: 16px;
-  transition: all 0.2s ease-in-out;
-}
+  pre code.hljs {
+    padding-left: 5px;
+  }
 
-.top:hover {
-  font-size: 20px;
-  border-radius: 10px;
+  .top {
+    margin: 0;
+    left: auto;
+    right: 11px !important;
+    bottom: 25px;
+  }
 }
 
 /* media for 699px device and lower */
@@ -380,8 +411,33 @@ footer ul li:first-child {
     width: 98%;
   }
 
+  section {
+    padding: 0 10px;
+  }
+
   header p {
     font-size: 32px;
+  }
+
+  .menu-item {
+    font-size: 18px;
+  }
+
+  section.base_information {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+
+  section.skills div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  }
+
+  section.base_information figure a img {
+    width: 300px;
+  }
+
+  .code_examples code span {
+    font-size: 12px;
   }
 
   .base_information .contacts ul {
@@ -400,12 +456,18 @@ footer ul li:first-child {
   }
 
   .top {
-    right: 25px;
+    right: 11px;
+    bottom: 25px;
   }
 
   .top:hover {
     border-radius: 50%;
     font-size: 16px;
+  }
+
+  .video-wrapper iframe {
+    width: 100%;
+    height: auto;
   }
 }
 
