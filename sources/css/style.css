@@ -252,6 +252,35 @@ section.job_wrapper ul li a {
   color: #ff7800;
 }
 
+/* Projects */
+.code_wrapper ol > li {
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.code_wrapper ol > li div img {
+  width: 100%;
+  height: auto;
+  border: 8px solid #f6f6f6;
+}
+.code_wrapper ol > li div:last-child {
+  margin: 25px 20px 0 20px;
+  padding: 0 20px;
+}
+
+.technologies + ul {
+  list-style-type: square;
+  margin: 0 0 18px 0;
+}
+.technologies + ul li,
+.technologies {
+  font-size: 16px;
+}
+.technologies {
+  padding-left: 20px;
+  margin: 0 0 8px 0;
+}
+
 /* Code */
 .code_examples code span {
   font-size: 14px;
@@ -391,6 +420,23 @@ footer ul li:first-child {
     top: 12px;
   }
 
+  .code_wrapper ol > li {
+    grid-template-columns: 1fr;
+  }
+  .code_wrapper ol {
+    padding-left: 0;
+  }
+  .code_wrapper ol > li div img {
+    width: 93%;
+  }
+  .code_wrapper ol > li div:last-child {
+    margin: 0 10px 0 10px;
+    padding: 0;
+  }
+  .code_wrapper ol > li {
+    margin-bottom: 30px;
+  }
+
   pre code.hljs {
     padding-left: 5px;
   }
@@ -442,6 +488,10 @@ footer ul li:first-child {
 
   .base_information .contacts ul {
     padding-left: 0;
+  }
+
+  .code_wrapper ol > li div:last-child p {
+    margin-top: 10px;
   }
 
   footer p {
